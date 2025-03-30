@@ -3,3 +3,5 @@ osmnx
 networkx
 geopy
 gunicorn
+scikit-learn
+
