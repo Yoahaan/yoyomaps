@@ -16,7 +16,7 @@ def compute_route(source_name, destination_name):
     center_lon = (source_coords["longitude"] + destination_coords["longitude"]) / 2
 
     # Download the road network
-    G = ox.graph_from_point((center_lat, center_lon), dist=5000, network_type="drive")
+    G = ox.graph_from_point((center_lat, center_lon), dist=2000, network_type="drive")
 
     # Find the nearest nodes to the provided coordinates
     source_node = ox.distance.nearest_nodes(G, source_coords["longitude"], source_coords["latitude"])
