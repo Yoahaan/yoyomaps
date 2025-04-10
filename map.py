@@ -3,10 +3,6 @@ import networkx as nx
 from name_fetcher import get_lat_lon
 from networkx.algorithms.simple_paths import shortest_simple_paths
 
-import osmnx as ox
-import networkx as nx
-from name_fetcher import get_lat_lon
-from networkx.algorithms.simple_paths import shortest_simple_paths
 
 def compute_route(source_name, destination_name, k=3):
     print(f"[DEBUG] Fetching coordinates for '{source_name}' and '{destination_name}'...")
