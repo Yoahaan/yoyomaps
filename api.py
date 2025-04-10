@@ -6,6 +6,11 @@ import requests
 
 app = Flask(__name__)
 
+@app.route('/', methods=['GET'])
+def root():
+    return jsonify({"message": "API is up and running"}), 200
+
+
 # get_route endpoint for route fetching
 @app.route('/get_route', methods=['POST'])
 def get_route_api():
