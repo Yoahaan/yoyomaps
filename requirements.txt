@@ -4,4 +4,4 @@ networkx
 geopy
 gunicorn
 scikit-learn
-
+requests
