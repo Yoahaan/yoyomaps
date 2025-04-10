@@ -23,7 +23,7 @@ def compute_route(source_name, destination_name, k=3):
 
     # Load road network
     print("[DEBUG] Downloading road network from OSM...")
-    G_multi = ox.graph_from_point((center_lat, center_lon), dist=2000, network_type="drive")
+    G_multi = ox.graph_from_point((center_lat, center_lon), dist=1000, network_type="drive")
 
     try:
         source_node = ox.distance.nearest_nodes(G_multi, source_coords["longitude"], source_coords["latitude"])
